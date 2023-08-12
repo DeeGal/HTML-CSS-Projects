@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<style>
+	body {
+	    background-color: linen;	
+	}
+	h1 { 
+	    color: black;
+		text-align: margin-top;
+		font-size: 80px;
+		
+	}
+	h2 { 
+	    color: black;
+		text-align: margin-left;
+		font-size: 40px;
+		
+	}
+	p {
+	    font-family: "Times New Roman";
+		font-size: 20px;
+		color: red;
+		text-align: margin-left;
+	}
+	</style>
+	</head>
+    <body>
+
+        <h1><b>Welcome to my Homepage</h1></b> <!-- write your comments-->
+		<h2><b>Use the menu to select different Stylesheets</h2></b>
+        <p><b>SheetStyle 1: LOVE</p></b>
+		<p><b>SheetStyle 2: HOPE</p></b>
+		<p><b>SheetStyle 3: PEACE</p></b>
+		<p><b>SheetStyle 4: FAITH</p></b>
+		<button type ="Button" onclick="myFunction()">Click Me!</button>
+		<button type ="Button" onclick="myFunctionSec()">SheetStyle 1</button>
+		<button type ="Button" onclick="myFunctionThi()">SheetStyle 2</button>
+		<button type ="Button" onclick="myFunctionFor()">SheetStyle 3</button>
+		<button type ="Button" onclick="myFunctionFith()">SheetStyle 4</button>
+		<p id="demo"><i>Loading your message....</p></i>
+		
+		<script>
+		function myFunction(){
+		    document.getElementById("demo").innerHTML = "Hello Diana and Welcome!"
+		}
+  		function myFunctionSec(){
+		    document.getElementById("demo").innerHTML = "You Selected SheetStyle 1: You Are Loved!"
+		}
+		function myFunctionThi(){
+		    document.getElementById("demo").innerHTML = "You Selected SheetStyle 2: Your Hope Shall Not Be In Vain!"
+		}
+		function myFunctionFor(){
+		    document.getElementById("demo").innerHTML = "You Selected SheetStyle 3: You Have Peace That Surpasses All Human Understanding!"
+		}
+		function myFunctionFith(){
+		    document.getElementById("demo").innerHTML = "You Selected SheetStyle 4: Have Faith, For It Pleases GOD!"
+		}
+		</script>
+    </body>
+	
+</html>

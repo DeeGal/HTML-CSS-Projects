@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+body {
+    background-color: Pink
+}
+p {
+    color: purple;
+	font-size: 50px;
+	font-family: "Times New Roman";
+	text-align: margin-top;
+}
+</style>
+<p><b>Please input a number between 1 and 10:</b></p>
+<input id= "numb" type="number">
+<button type= "button" onClick= "myFunction()">Submit</button>
+<p id= "demo"></p>
+<script>
+function myFunction() {
+    var x,text;
+	x = document.getElementById("numb").value;
+	if (isNaN(x) || x < 1 || x > 10) {   
+	    text = "Input not Valid!";
+	} else {
+	    text = "Input OK!";
+	}
+	document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>
